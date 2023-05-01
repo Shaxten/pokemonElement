@@ -55,4 +55,9 @@ export default {
       }
     }
   };
+
+  fetch('/src/data.JSON')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 </script>
+
