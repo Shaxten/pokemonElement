@@ -12,7 +12,14 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  devServer: {
-    proxy: 'https://shaxten.github.io/pokemonElement/',
-  }
+  server: {
+    proxy: {
+      "/src": {
+        target: "https://github.com/Shaxten/pokemonElement/tree/master/",
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/src/, ""),
+      },
+    },
+  },
 })
