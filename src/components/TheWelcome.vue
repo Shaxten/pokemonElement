@@ -13,7 +13,9 @@ import SupportIcon from './icons/IconSupport.vue'
   <div class="imgPokemon" v-show="pokemonElement1 != ''">
     <div>
       <p>Normal</p>
-      <img id="img" />      
+      <img id="img" />
+      <div id="test">
+      </div>
     </div>
     <div>
       <p>Shiny</p>

@@ -1,9 +1,12 @@
-@import './base.css';
-
 body{
   background-image: url('/src/assets/snorlax.jpg');
   padding-left: 10rem;
   padding-top: 10rem;
+}
+
+#test{
+  background-image: url('/src/assets/vodka.png');
+  display: none;
 }
 .pokemonData{
   display: flex;
