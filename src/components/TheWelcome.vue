@@ -1,12 +1,3 @@
-<script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
-</script>
-
 <template>
   <h1>Découvrer les éléments d'un pokemon!</h1>
   <h2 v-show="pokemonElement1 != ''">{{pokemonElement1}} || {{pokemonElement2}}</h2>
@@ -24,9 +15,9 @@ import SupportIcon from './icons/IconSupport.vue'
   </div>
 
   <div class="pokemonData">
-    <label>Nom du pokemon: </label>
+    <label id="namePoke">Nom du pokemon: </label>
     <input id="pokemonName" />
-    <button v-on:click="showPokemon()">Voir éléments</button>    
+    <button id="buttonPokemon" v-on:click="showPokemon()">Voir éléments</button>    
   </div>
 
 </template>
